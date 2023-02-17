@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="../Pagination/Pagination.css">
+</head>
+
+<body id="body">
+    <div id="firstfloat">
+        <div id="maindiv">
+            <canvas id="maindivcanvas"></canvas>
+        </div>
+
+
+        <div id="colorsliders">
+            <div>
+                <span class="spans">
+                    <input type="color" value='#808080' id="inputs">
+                </span>
+                <span class="spans">
+                    <span id="flex1">
+                    <label for="range1" id="firstlabel">Opacity&colon;</label>
+                    </span>
+                <span id="label1" class="label"></span>
+                <input type="range" class="ranges" value="100" min="0" max="100" id="range1"></span>
+            </div>
+        </div>
+        <span id='flex2'>
+            <input type="range" class="ranges" value ="0" min="1" max="100" id="range2">
+        </span>
+        <div id='thisdiv'><span>Num:&ThinSpace;</span><span id='spec'></span></div>
+
+        <div class='pagination' id="pag">
+            <a href="Main.html" class='active'>1</a>
+            <a href="../ImageGallery/ImageGallery.html">2</a>
+        </div>
+
+
+        <div id="overaldesc">
+            <div id="secdiv">
+                <img id="myimg"></img>
+            </div>
+            <button onclick="importData()">Add Image</button>
+        </div>
+    </div>
+    <div id="secondfloat">
+        <p>Image width:<input type="number" id="imgwidth"></p>
+        <p>Image height:<input type="number" id="imgheight"></p>
+        <p>Canvas width:<input type="number" id=canvaswidth></p>
+        <p>Canvas height:<input type="number" id="canvasheight"></p>
+    </div>
+</body>
+
+<script type="module" src="Main.js"></script>
+<script type="module" src="Drag.js"></script>
+<script type="module" src="SubProject1.js"></script>
+<script src="Import.js"></script>
+
+</html>
