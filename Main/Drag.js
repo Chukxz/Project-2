@@ -141,8 +141,6 @@ class DragResize {
                 }
                 if (value == 'D') {
                     signX = -1, existX = 0;
-
-                    s
                     signY = -1, existY = 0;
                 }
                 if (value == 'i') {

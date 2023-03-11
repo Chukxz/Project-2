@@ -158,10 +158,10 @@ window.onload = function() {
     canvht.oninput = function() {
             if (canvht.value <= image.img.height - CanvWidth) {
                 canvas.height = canvht.value;
-                ArrangeCanvas(List[1], List[2], List[9], List[10], List[11], num, canvas.width, canvas.height);
-                if (canvas.height + maindiv.offsetTop + 8 > image.img.height) {
-                    maindiv.style.top = ((canvas.width + maindiv.offsetTop + 8) - (image.img.height)) + 'px';
-                }
+            }
+            ArrangeCanvas(List[1], List[2], List[9], List[10], List[11], num, canvas.width, canvas.height);
+            if (canvas.height + maindiv.offsetTop + 8 > image.img.height) {
+                maindiv.style.top = ((canvas.width + maindiv.offsetTop + 8) - (image.img.height)) + 'px';
             }
         }
         // window.addEventListener('keydown', (e) => { if (e.shiftKey == false && e.ctrlKey == false && e.altKey == false && e.code == "Enter") { console.log(e.key) } })

@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
     <link rel="stylesheet" href="Main.css">
-    <link rel="stylesheet" href="../Pagination/Pagination.css">
 </head>
 
 <body id="body">
@@ -36,9 +35,9 @@
         </span>
         <div id='thisdiv'><span>Num:&ThinSpace;</span><span id='spec'></span></div>
 
-        <div class='pagination' id="pag">
-            <a href="Main.html" class='active'>1</a>
-            <a href="../ImageGallery/ImageGallery.html">2</a>
+        <div id="pag">
+            <button class="pagflex" id="left">&lang;</button>
+            <button class="paggflex" id="right">&rang;</button>
         </div>
 
 
@@ -46,7 +45,7 @@
             <div id="secdiv">
                 <img id="myimg"></img>
             </div>
-            <button onclick="importData()">Add Image</button>
+            <button onclick="importData()">Select Image</button>
         </div>
     </div>
     <div id="secondfloat">
